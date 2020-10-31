@@ -67,7 +67,7 @@ public class sendemail extends HttpServlet {
        java.text.SimpleDateFormat sdf=new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
        String date2=sdf.format(date);
        Class.forName("com.mysql.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/messengernew","root","2511");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/messengernew","root","2511"); //add your own url for database
 		String g="use "+user2;
 		String a="insert into sent (tos,msg,sentTo,Subject) values(?,?,?,?);";
 		String l="use "+re2;
@@ -94,7 +94,7 @@ public class sendemail extends HttpServlet {
 	}
 	catch(Exception e) {
 		System.out.print(e);
-		response.sendRedirect("msgnotsent.jsp");
+		response.sendRedirect("UserNotFound.jsp");
 	}}
 	
 }
