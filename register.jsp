@@ -21,20 +21,20 @@
 </div><br><br>
 <center><h1>Email System <span style="color: #e6b800">Energetic</span></h1></center>
 
-<center><input id= "first" style="text-indent:20px;" type="text" name="firstname" placeholder="First name"><br></center>
-<center><input id= "last" style="text-indent:20px;" type="text" name="lastname" placeholder="Last name"><br></center>
-<center><input id= "user" style="text-indent:20px;" type="text" name="uid" placeholder="User name"><br></center>
-<center><input id= "email" style="text-indent:20px;" type="email" name="emailid" placeholder="Email"><br><center>
-<center><input id= "password" style="text-indent:20px;" type="password" name="password" placeholder="Password"><br><center>
-<center><input id= "confirmpass" style="text-indent:20px;" type="password" name="confirm" placeholder="Confirm password"><br><center>
-<center><input id= "contact" style="text-indent:20px;" type="text" name="contact" placeholder="Contact number"><br><center>
-<center><input id= "DOB" style="text-indent:20px;" type="date" name="dob"><br><center>
+<center><input id= "first" style="text-indent:21px;" type="text" name="firstname" placeholder="First name"><br></center>
+<center><input id= "last" style="text-indent:21px;" type="text" name="lastname" placeholder="Last name"><br></center>
+<center><input id= "user" style="text-indent:21px;" type="text" name="uid" placeholder="User name"><br></center>
+<center><input id= "email" style="text-indent:21px;" type="email" name="emailid" placeholder="Email"><br><center>
+<center><input id= "password" style="text-indent:21px;" type="password" name="password" placeholder="Password"><br><center>
+<center><input id= "confirmpass" style="text-indent:21px;" type="password" name="confirm" placeholder="Confirm password"><br><center>
+<center><input id= "contact" style="text-indent:21px;" type="text" name="contact" placeholder="Contact number"><br><center>
+<center><input id= "DOB" style="text-indent:21px;" type="date" name="dob"><br><center>
 <center><input id="in"  type="submit" name="submit" value="Sign up"></input><center> 
 <%
           response.setHeader("Cache-Control","no-cache");
           response.setHeader("Cache-Control","no-store");
           response.setDateHeader("Expires",0);
-          response.setHeader("Pragma","no-cache");
+          response.setHeader("Pragma","no-cache,must-revalidate"); //HTTP 1.1
           
           
           %>
