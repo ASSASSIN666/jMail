@@ -1,7 +1,6 @@
 name: Format
-on:
-  pull_request:
-    branches: [master]
+on: workflow_dispatch
+   
 jobs:
   format:
     runs-on: ubuntu-latest
